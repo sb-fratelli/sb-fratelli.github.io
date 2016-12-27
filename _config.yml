@@ -4,6 +4,10 @@ tagline:      "a men's chorus"
 baseurl:      ""
 paginate:     1
 
+
+facebook:
+   url: "https://www.facebook.com/FratelliAMensChorus/"
+
 # About/contact
 author:
   name:       "Phill Conrad"
