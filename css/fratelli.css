@@ -45,26 +45,35 @@ a:hover {
     margin-left: 1rem;
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 52em) {
+    
     .btn {
-	padding: 0.75rem 1rem; }
+	padding: 0.75rem 1rem;
+	/* border: 1px solid pink; */
+    }
 }
 
-@media screen and (min-width: 42em) and (max-width: 64em) {
+@media screen and (min-width: 48em) and (max-width: 58em) {
     .btn {
 	padding: 0.6rem 0.9rem;
-	font-size: 0.9rem; }
+	font-size: 0.9rem;
+	/* border: 1px solid purple; */
+    }
 }
 
-@media screen and (max-width: 42em) {
+@media screen and (max-width: 48em) {
     .btn {
       display: block;
       width: 100%;
       padding: 0.75rem;
-      font-size: 0.9rem; }
-      .btn + .btn {
+      font-size: 0.9rem;
+      /* border: 1px solid orange; */
+    }
+    
+    .btn + .btn {
         margin-top: 1rem;
-        margin-left: 0; }
+        margin-left: 0;
+    }
 }
 
 .page-header {
