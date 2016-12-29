@@ -92,6 +92,15 @@ a:hover {
     height: 115px;
 }
 
+div.group-photo {
+    float:right;
+    width: 300px;
+    height: 115px;
+    background-image: url(/static/images/2016_fall_group_photo_300x115.jpg);
+   /* border: 3px solid pink; */
+}
+
+
 @media screen and (min-width: 600px )  {
     .page-header {
 	padding: 2rem 1rem;
@@ -124,6 +133,11 @@ a:hover {
 	margin: 0rem 0.5rem 1rem 0.5rem;
 	background-image: url(/static/images/logo-50.jpg);
     }
+    div.group-photo {
+	display: none;
+	width: 0px;
+	height: 0px;
+    }
 }
 
 @media screen and (max-width: 275px ) {
@@ -133,6 +147,11 @@ a:hover {
     .page-header-image {
 	background-image: url(/static/images/logo-50.jpg);
 	padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+    }
+    div.group-photo {
+	display: none;
+	width: 0px;
+	height: 0px;
     }
 }
 
@@ -324,10 +343,4 @@ a:hover {
     text-align:center;
 }
 
-div.group-photo {
-    float:right;
-    width: 300px;
-    height: 115px;
-    background-image: url(/static/images/2016_fall_group_photo_300x115.jpg);
-    border: 1px solid pink;
-}
+
