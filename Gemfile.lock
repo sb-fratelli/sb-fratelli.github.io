@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
@@ -51,4 +51,4 @@ DEPENDENCIES
   pygments.rb
 
 BUNDLED WITH
-   1.12.5
+   1.13.1
