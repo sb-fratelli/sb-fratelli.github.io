@@ -13,23 +13,7 @@ title: "Fratelli: Media"
 
 # Images from 2016
 
-<div id="gallery" style="display:none;">
-  
-  <img alt="Fratelli Holiday Concert Poster"
-       src="thumbs2016/FratelliHolidayConcertPoster.jpg"
-       data-image="images2016/FratelliHolidayConcertPoster.jpg"
-       data-description="Fratelli Holiday Concert Poster">
+<div id="gallery2016" style="display:none;"></div>
 
-  <img alt="Zack's Interview with KTMS's Jim Sirianni"
-       src="thumbs2016/ZackKTMSInterviewJimSirianni.jpg"
-       data-image="images2016/ZackKTMSInterviewJimSirianni.jpg"	
-       data-description="Zack's Interview with KTMS's Jim Sirianni" >
+<script type="text/javascript" src="/media/gallery2016.js"></script>
 
-</div>
-<script type="text/javascript">
-  
-  jQuery(document).ready(function(){
-  jQuery("#gallery").unitegallery();
-  });
-  
-</script>    
