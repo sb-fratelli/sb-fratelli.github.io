@@ -3,6 +3,11 @@ layout: default
 title: {{ site.name }}
 ---
 
+
+<div class="featured-300px-photo">
+  <img src="static/images/featured-300px-photo.jpg" alt="Current Featured Photo" width="300">
+</div>
+
 <div id="home">
   <h1>News</h1>
   <ul class="posts">
@@ -11,3 +16,4 @@ title: {{ site.name }}
     {% endfor %}
   </ul>
 </div>
+

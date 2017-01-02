@@ -25,16 +25,17 @@ a:hover {
 }
 
 .btn {
-  display: inline-block;
-  margin-bottom: 1rem;
-  color: rgba(0, 0, 0, 0.7);
-  /* background-color: rgba(255, 255, 255, 0.08); */
-  background-image: url(/static/images/bg1.jpg);
-  border-color: rgba(255, 255, 255, 0.2);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+    font-size: 1.0rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(255, 255, 255, 0.08); */
+    background-image: url(/static/images/bg1.jpg);
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 }
 
 .btn:hover {
@@ -42,40 +43,9 @@ a:hover {
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.3); }
+
 .btn + .btn {
-    margin-left: 1rem;
-}
-
-@media screen and (min-width: 58em) {
-    
-    .btn {
-	padding: 0.75rem 1rem;
-	/* border: 1px solid pink; */
-    }
-
-}
-
-@media screen and (min-width: 52em) and (max-width: 58em) {
-    .btn {
-	padding: 0.6rem 0.9rem;
-	font-size: 1.0rem;
-	/* border: 1px solid purple;  */
-    }
-}
-
-@media screen and (max-width: 52em) {
-    .btn {
-      display: block;
-      width: 100%;
-      padding: 0.75rem;
-      font-size: 1.2rem;
-     /* border: 1px solid orange; */
-    }
-    
-    .btn + .btn {
-        margin-top: 1rem;
-        margin-left: 0;
-    }
+    margin-left: 0.7em;
 }
 
 .page-header {
@@ -92,16 +62,39 @@ a:hover {
     height: 115px;
 }
 
+div.featured-300px-photo {
+    float:right;
+    width: 300px;
+    height: auto;
+    background-image: url(/static/images/tshirt-background.jpg);    
+}
+
 div.group-photo {
     float:right;
     width: 300px;
     height: 115px;
     background-image: url(/static/images/2016_fall_group_photo_300x115.jpg);
+    
    /* border: 3px solid pink; */
 }
 
 
-@media screen and (min-width: 600px )  {
+
+@media screen and (min-width: 800px )  {
+
+    .main-content {
+	max-width: 800px;
+	padding: 2rem 6rem;
+	margin: 0 auto;
+	font-size: 1.1rem; }
+    
+    .btn {
+	padding: 0.5rem 0.75rem;
+    }
+    .btn + .btn {
+	margin-left: 0.6em;
+    }
+
     .page-header {
 	padding: 2rem 1rem;
     }
@@ -110,9 +103,27 @@ div.group-photo {
 	height: 257px;
 	margin: 0rem 1rem 2rem 1rem;
     }
+
+    
 }
 
-@media screen and (min-width: 413px ) and (max-width: 600px) {
+@media screen and (min-width: 600px ) and (max-width: 800px) {
+
+    .main-content {
+	padding: 2rem 4rem;
+	font-size: 1.1rem;
+    }
+
+    
+    .btn {
+	padding: 0.4rem 0.6rem;
+	font-size: 0.8rem;
+    }
+
+    .btn + .btn {
+	margin-left: 0.5em;
+    }   
+    
     .page-header {
 	padding: 1rem 0.5rem;
     }
@@ -120,11 +131,29 @@ div.group-photo {
 	height: 193px;
 	margin: 0rem 0.5rem 1rem 0.5rem;
 	background-image: url(/static/images/logo-75.jpg);
+	border: 3px solid orange;
     }
 }
 
 
-@media screen and (min-width: 275px ) and (max-width: 413px) {
+@media screen and (min-width: 420px ) and (max-width: 600px) {
+
+    .main-content {
+	padding: 2rem 6rem;
+	margin: 0 auto;
+	font-size: 1.0rem;
+    }
+    
+
+    .btn {
+	padding: 0.1rem 0.2rem;
+	font-size: 0.7rem;
+    }
+
+    .btn + .btn {
+	margin-left: 0.2em;
+    }   
+
     .page-header {
 	padding: 1rem 0.5rem;
     }
@@ -133,6 +162,11 @@ div.group-photo {
 	margin: 0rem 0.5rem 1rem 0.5rem;
 	background-image: url(/static/images/logo-50.jpg);
     }
+    div.featured-300px-photo {
+	display: none;
+	width: 0px;
+	height: 0px;
+    }
     div.group-photo {
 	display: none;
 	width: 0px;
@@ -140,13 +174,38 @@ div.group-photo {
     }
 }
 
-@media screen and (max-width: 275px ) {
+@media screen and (max-width: 420px ) {
+
+    .main-content {
+	padding: 2rem 6rem;
+	margin: 0 auto;
+	font-size: 1.0rem;
+    }
+
+    
+    .btn {
+	display: block;
+	margin: 5px auto 5px auto;
+	width: 80%;
+	padding: 0.25rem;
+	font-size: 1.0rem;
+    }
+    
+    .btn + .btn {
+	margin: 5px auto 5px auto;
+    }
+    
     .page-header {
 	padding: 0.5rem 0.25rem;
     }
     .page-header-image {
 	background-image: url(/static/images/logo-50.jpg);
 	padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+    }
+    div.featured-300px-photo {
+	display: none;
+	width: 0px;
+	height: 0px;
     }
     div.group-photo {
 	display: none;
@@ -164,23 +223,9 @@ div.group-photo {
     margin-top: 0;
 }
 
-@media screen and (min-width: 64em) {
-    .main-content {
-	max-width: 64rem;
-	padding: 2rem 6rem;
-	margin: 0 auto;
-	font-size: 1.1rem; }
-}
-@media screen and (min-width: 42em) and (max-width: 64em) {
-    .main-content {
-	padding: 2rem 4rem;
-	font-size: 1.1rem; }
-}
-@media screen and (max-width: 42em) {
-    .main-content {
-	padding: 2rem 1rem;
-	font-size: 1rem; }
-}
+
+
+
 .main-content img {
     max-width: 100%;
 }
@@ -302,18 +347,10 @@ div.group-photo {
 }
 
 .site-footer {
+    clear: both;
     padding-top: 2rem;
     margin-top: 2rem;
-    border-top: solid 1px #eff0f1; }
-@media screen and (min-width: 64em) {
-    .site-footer {
-	font-size: 1rem; } }
-@media screen and (min-width: 42em) and (max-width: 64em) {
-    .site-footer {
-	font-size: 1rem; } }
-@media screen and (max-width: 42em) {
-    .site-footer {
-	font-size: 0.9rem; }
+    border-top: solid 1px #eff0f1;
 }
 
 .site-footer-about {
