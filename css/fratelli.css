@@ -63,11 +63,31 @@ a:hover {
 }
 
 div.featured-300px-photo {
+    padding-left: 1em;
     float:right;
     width: 300px;
     height: auto;
-    background-image: url(/static/images/tshirt-background.jpg);    
+    background-image: url(/static/images/tshirt-background.jpg);
+    text-align:center;
 }
+
+@media screen  {
+ div.photo-float-right {
+     text-align:center;
+ }
+}
+
+
+@media screen and (min-width: 600px )  {
+div.photo-float-right {
+    float:right;
+    width: 300px;
+    height: auto;
+    text-align:center;
+}
+}
+
+
 
 div.group-photo {
     float:right;
@@ -83,7 +103,8 @@ div.group-photo {
 @media screen and (min-width: 800px )  {
 
     .main-content {
-	max-width: 800px;
+	min-width: 800px;
+	max-width: 1200px;
 	padding: 2rem 6rem;
 	margin: 0 auto;
 	font-size: 1.1rem; }
@@ -380,3 +401,6 @@ div.group-photo {
 }
 
 
+ul.posts li span {
+    font-size: 80%;
+}
