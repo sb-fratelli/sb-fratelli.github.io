@@ -9,7 +9,8 @@ title: {{ site.name }}
 </div>
 
 <div id="home">
-  <h1>News</h1>
+  <p>Our next full-length concert will be Monday, May 22, 8PM, at the First United Methodist Church, Santa Barbara 305 E Anapamu St, Santa Barbara, California 93101. <a href="/concerts">More details</a></p>
+  <h2>News</h2>
   <ul class="posts">
     {% for post in site.posts %}
       <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><br>
