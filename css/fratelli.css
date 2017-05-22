@@ -404,3 +404,14 @@ div.group-photo {
 ul.posts li span {
     font-size: 80%;
 }
+
+div.privacy-policy {
+    font-size: 80%;
+    color: #789;
+    padding-top: 2em;
+    
+}
+
+.iubenda-ibadge {
+    vertical-align: bottom;
+}
